@@ -44,7 +44,7 @@ class StreamManager {
     while (true) {
       const minConsume = 2000;
       const maxConsume = 5000;
-      if (this.stream1.balance <= 0 || this.stream2.balance) {
+      if (this.stream1.balance <= 0 || this.stream2.balance <=0) {
         console.log("Both streams have no balance.");
         break;
       }
